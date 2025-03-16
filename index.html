@@ -17,16 +17,16 @@
 	</head>
 	<body>
 		<div id="main_box">
-			<div id="logo_box">在线视频播放器</div>
-			<div id="input_box">
-				<input type="text" id="url_box" autocomplete="off" list="play_history" placeholder="请输入视频播放地址(支持m3u8、flv、mp4等)"/>
-				<div id="url_btn" class="btn_extra_css_0">
-					<svg id="btn_logo">
-						<polygon points="1,0 19,10 1,20" />
-					</svg>
-				</div>
-				<div id="play_history"></div>
-			</div>
+<!--			<div id="logo_box">在线视频播放器</div>-->
+<!--			<div id="input_box">-->
+<!--				<input type="text" id="url_box" autocomplete="off" list="play_history" placeholder="请输入视频播放地址(支持m3u8、flv、mp4等)"/>-->
+<!--				<div id="url_btn" class="btn_extra_css_0">-->
+<!--					<svg id="btn_logo">-->
+<!--						<polygon points="1,0 19,10 1,20" />-->
+<!--					</svg>-->
+<!--				</div>-->
+<!--				<div id="play_history"></div>-->
+<!--			</div>-->
 			<div id="video_box">
 				<video id="video_player" controls preload="auto">
 					 您的浏览器不支持 HTML5 video 标签
@@ -35,3 +35,9 @@
 		</div>
 	</body>
 </html>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		document.getElementById('video_player').src = 'https://brandon-1311649168.cos.ap-beijing.myqcloud.com/vedio/research.mp4';
+	});
+</script>
